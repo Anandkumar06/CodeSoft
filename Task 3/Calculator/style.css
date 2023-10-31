@@ -1,0 +1,147 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("./background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.calculator {
+    width: 350px;
+    text-align: center;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    height: 450px;
+    box-shadow: 8px -5px 1px 12px lightslategray;
+    background-color: rgba(36, 39, 38, 0.705);
+}
+#display
+{
+    width: 100%;
+    height: 50px;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    font-family: 'Orbitron', sans-serif;
+    background-color: rgba(0, 0, 0, 0.842);
+    color: rgb(13,209,188);
+    margin-top: 10px;
+}
+.num
+{
+    background-color: black;
+    color: #ccc;
+}
+.num:hover
+{
+    background-color: rgba(0, 0, 0, 0.801);
+}
+.math
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+    flex-wrap: nowrap;
+}
+.math button:hover
+{
+    background-color: rgba(118, 108, 108, 0.82);
+
+}
+.math button
+{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: lightgrey;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.buttons
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+
+}
+
+.symbols
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40%;
+    /* border: 2px solid red; */
+}
+.symbols button
+{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: lightgrey;
+    border-radius: 5px;
+
+}
+.symbols button:hover
+{
+    background-color: rgba(118, 108, 108, 0.82);
+}
+.numbers
+{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 2px solid green; */
+}
+
+.numbers button
+{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* .buttons button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+
+} */
+#equal button{
+    width: 118px;
+}
+.logo-image
+{
+    width: 100%;
+
+}
+.logo-image img
+{
+    width: 90%;
+}

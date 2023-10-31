@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Scientific Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="logo-image">
+            <img src="./casio.png" alt="">
+        </div>
+        <input type="text" id="display" readonly>
+        <div class="math">
+            <button onclick="appendToDisplay('Math.sqrt(')">√</button>
+            <button onclick="appendToDisplay('Math.pow(')">^</button>
+            <button onclick="appendToDisplay('Math.sin(')">sin</button>
+            <button onclick="appendToDisplay('Math.cos(')">cos</button>
+            <button onclick="appendToDisplay('Math.tan(')">tan</button>
+        </div>
+        <div class="buttons">
+            <div class="numbers">
+                <button onclick="appendToDisplay('7')" class="num">7</button>
+            <button onclick="appendToDisplay('8')" class="num">8</button>
+            <button onclick="appendToDisplay('9')" class="num">9</button>
+            <button onclick="appendToDisplay('4')"class="num">4</button>
+            <button onclick="appendToDisplay('5')" class="num">5</button>
+            <button onclick="appendToDisplay('6')" class="num">6</button>
+            <button onclick="appendToDisplay('1')" class="num">1</button>
+            <button onclick="appendToDisplay('2')" class="num">2</button>
+            <button onclick="appendToDisplay('3')" class="num">3</button>
+            <button onclick="appendToDisplay('0')" class="num">0</button>
+            <button onclick="appendToDisplay('00')" class="num">00</button>
+            <button onclick="appendToDisplay('.')" class="num">.</button>
+
+            </div>
+            <div class="symbols">
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="clearDisplay()">AC</button>
+            <button onclick="appendToDisplay('*')">*</button>
+            <button onclick="appendToDisplay('/')" >/</button>
+            <button onclick="appendToDisplay('+')" >+</button>
+            <button onclick="appendToDisplay('-')">-</button>
+            <div id="equal">
+            <button onclick="calculateResult()" >=</button>
+
+            </div>
+            </div>   
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
